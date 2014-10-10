@@ -1,0 +1,8 @@
+/* only using class in selector because the container element can be any block element really */
+
+.calendar-puzzle {
+    width:600px;
+    height:720px;
+    padding: 0 10px;
+    background:grey;
+}
