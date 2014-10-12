@@ -1,8 +1,67 @@
 /* only using class in selector because the container element can be any block element really */
 
 .calendar-puzzle {
-    width:600px;
-    height:720px;
+    position: relative;
+}
+
+.calendar-puzzle > ul.time-slots {
+    list-style: none;
+    padding: 0;
+    margin: 0 10px 0 0;
+    width: 70px;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.calendar-puzzle > ul.time-slots > li {
+    text-align: right;
+    height: 30px;
+    position: relative;
+    color: #666;
+    font-size: 12px;
+}
+
+/* last time slot is 0 height since we don't go beyond that point */
+.calendar-puzzle > ul.time-slots > li:last-child {
+    height: 0;
+}
+
+.calendar-puzzle > ul.time-slots > li span.time-wrap {
+    position: absolute;
+    top: -6px;
+    right: 0;
+}
+
+.calendar-puzzle > ul.time-slots > li:first-child span.time-wrap {
+    top: -3px;
+}
+.calendar-puzzle > ul.time-slots > li:last-child span.time-wrap {
+    top: -11px;
+}
+
+.calendar-puzzle > ul.time-slots > li span.ampm {
+    color: #aaa;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 65%;
+}
+
+.calendar-puzzle > ul.time-slots > li:nth-child(even) {
+    color: #aaa;
+    font-size: 60%;
+    color: #bbb;
+}
+
+.calendar-puzzle > ul.time-slots > li:nth-child(even) span.ampm {
+    display: none;
+}
+
+.calendar-puzzle > div.events {
+    width: 600px;
+    height: 720px;
     padding: 0 10px;
-    background:grey;
+    background: grey;
+    display: inline-block;
+    vertical-align: top;
 }

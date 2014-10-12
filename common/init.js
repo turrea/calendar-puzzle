@@ -22,3 +22,17 @@ layOutDay = (function($){
     return layOutDay;
 
 })(jQuery);
+
+test = (function(){
+
+    var events = [
+        { start:30, end:150 },
+        { start: 150, end:180 }
+    ];
+
+    function test(){
+        layOutDay(events);
+    }
+
+    return test
+})();
