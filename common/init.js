@@ -27,7 +27,8 @@ test = (function(){
 
     var events = [
         { start:30, end:150 },
-        { start: 150, end:180 }
+        { start: 150, end:180 },
+        { start: 720, end: 750 }
     ];
 
     function test(){

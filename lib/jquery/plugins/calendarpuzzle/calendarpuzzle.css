@@ -8,7 +8,7 @@
     list-style: none;
     padding: 0;
     margin: 0 10px 0 0;
-    width: 70px;
+    width: 50px;
     display: inline-block;
     box-sizing: border-box;
     vertical-align: top;
@@ -34,10 +34,10 @@
 }
 
 .calendar-puzzle > ul.time-slots > li:first-child span.time-wrap {
-    top: -3px;
+    top: -4px;
 }
 .calendar-puzzle > ul.time-slots > li:last-child span.time-wrap {
-    top: -11px;
+    top: -10px;
 }
 
 .calendar-puzzle > ul.time-slots > li span.ampm {
