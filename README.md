@@ -4,6 +4,7 @@ calendar-puzzle
 This was a programming test I was asked to complete which included the following instructions:
 
 Puzzle Materials
+
 Given a set of events, render the events on a single day calendar (similar to Outlook, Calendar.app, and Google Calendar). There are several properties of the layout:
 
 1. No events may visually overlap.
